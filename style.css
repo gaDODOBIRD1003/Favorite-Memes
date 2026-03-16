@@ -1,0 +1,55 @@
+/*sample 1: changing the font family*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*sample 2: changing the background color*/
+body {
+    background-color: #333;
+}
+
+/*sample 3: overriding inline css*/
+.meme h2 {
+    color: rgb(141, 19, 172) !important;
+}
+
+/*sample 4: padding and margin for the meme sections*/
+.meme {
+    padding: 20px;  
+    margin: 20px;   
+}
+
+/*sample 5: border and boarder radius*/
+.meme img {
+    border: 2px solid rgba(0, 255, 13, 0.959);
+    border-radius: 25px;     
+}
+
+/*sample 6: box shadow*/
+img {
+    box-shadow: 5px 5px 20px black;
+}
+
+/*sample 7: hover effect for the nevigation links*/
+.nav-bar a:hover {
+    background-color: white; 
+    color: black;
+}
+
+/*sample 8: turning bullet list into squares*/
+ul {
+    list-style-type: square; /* makes bullet points squares instead of circles */
+}
+
+/*sample 9: adding button hover effect*/
+button:hover {
+    transform: scale(1.10);   
+}
+
+/*sample 10: flexbox for meme container*/
+.meme-container {
+    display: flex;             
+    flex-wrap: wrap;           
+    justify-content: center;   
+    gap: 20px;                 
+}

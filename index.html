@@ -4,7 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gado's Favorite memes.</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<style>
+.meme {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #444;
+    justify-content: center;
+}   
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #334;
+  padding: 10px;
+}
+.container div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+</style>
 <body style="background-color: #333;">
     <!-- Header -->
     <header style="position: relative;">
@@ -15,33 +41,35 @@
         <img src="./images/gado icon.png" alt="Gado Icon" style="height: 50px;">
     </button>
     </header>
+    <div class="meme-container">
     <!-- Main Content -->
+    <!-- Section 1-->
     <section class="meme" id="meme1">
         <article>
             <h2 style="color: white">1. The "Sniper Monkey" Meme</h2>
-            <img src="./images/sniper-monkey.gif" alt="Sniper Monkey Meme">
+            <img src="./images/sniper-monkey.gif" alt="Sniper Monkey Meme" style="display:block; margin:auto;">
             <p style="color: white">This meme features a Monkey with a sniper rifle.</p>
             <ul>
                 <li style="color: white">very nice</li>
             </ul>
         </article>
     </section>
-
+    <!-- Section 2 -->
     <section class="meme" id="meme2">
         <article>
             <h2 style="color: white">2. The "Stop, Look, Listen, and Learn" Meme</h2>
-            <img src="./images/tulfo-tombits.gif" alt="Stop, Look, Listen, and Learn Meme">
+            <img src="./images/tulfo-tombits.gif" alt="Stop, Look, Listen, and Learn Meme" style="display:block; margin:auto;">
             <p style="color: white">This meme shows a person that is being interviewd trying so hard to not laugh.</p>
             <ul>
                 <li style="color: white">this one gets me quite a lot</li>
             </ul>
         </article>
     </section>
-
+    <!-- Section 3 -->
     <section class="meme" id="meme3">
         <article>
             <h2 style="color: white">3. The "M&M shaking butt" meme</h2>
-            <img src="./images/mnm-shaking-butt.gif" alt="M&M Shaking Butt Meme">
+            <img src="./images/mnm-shaking-butt.gif" alt="M&M Shaking Butt Meme" style="display:block; margin:auto;">
             <p style="color: white">This meme features the M&M candy character shaking its butt, often used to express excitement or anticipation.</p>
             <ul>
                 <li style="color: white">this one is just pure gold and my current favorite!</li>
@@ -49,34 +77,36 @@
         </article>
     </section>
 
+    <!-- Section 4 -->
     <section class="meme" id="meme4">
         <article>
             <h2 style="color: white">4. The "Jisoo mimics duck toy" Meme</h2>
-            <img src="./images/jisoo-duck.gif" alt="Jisoo mimics duck toy Meme">
+            <img src="./images/jisoo-duck.gif" alt="Jisoo mimics duck toy Meme" style="display:block; margin:auto;">
             <p style="color: white">This meme features Jisoo mimicking a duck toy, which became popular for its cute and playful expression.</p>
             <ul>
                 <li style="color: white">this one is a classic and always brings a smile to my face!</li>
-                <p style="color: white">she's also my bias so back off!</p>
             </ul>
-           
+           <p style="color: white">she's also my bias so back off!</p>
         </article>
     </section>
 
+    <!-- Section 5 -->
     <section class="meme" id="meme5">
         <article>
             <h2 style="color: white">5. The "Jisoo Being random in her live" Meme</h2>
-            <img src="./images/jisoo-live.gif" alt="Jisoo Being random Meme">
+            <img src="./images/jisoo-live.gif" alt="Jisoo Being random Meme" style="display:block; margin:auto;">
             <p style="color: white">This meme features Jisoo being random, which became popular for its unexpected and humorous moments.</p>
             <ul>
                 <li style="color: white">I have no words HAHAHA!</li>
-                <p style="color: white">The Jisoo obsession reignites</p>
             </ul>
-            
-            </article>
-        </section>
+            <p style="color: white">The Jisoo obsession reignites</p>
+
+        </article>
+    </section>
         
+    </div>
     <!-- Navigation and Footer -->
-    <nav style="background-color: violet; padding: 10px; text-align: center;">
+    <nav class="nav-bar" style="background-color: violet; padding: 10px; text-align: center;">
         <a href="#meme1" style="color: #000000; margin: 0 10px; text-decoration: none;">Sniper Monkey</a>
         <a href="#meme2" style="color: #000000; margin: 0 10px; text-decoration: none;">Stop, Look, Listen</a>
         <a href="#meme3" style="color: #000000; margin: 0 10px; text-decoration: none;">M&M Butt</a>
@@ -90,6 +120,16 @@
 
     <button onclick="window.location.href='./pages/why-i-like-memes.html';" style="display: block; margin: 20px auto; padding: 10px 20px; background-color: violet; color: #000000; border: none; cursor: pointer;">Why I Like Memes</button>
     <button onclick="window.location.href='./pages/about.html';" style="display: block; margin: 20px auto; padding: 10px 20px; background-color: violet; color: #000000; border: none; cursor: pointer;">About</button>
+
+    <p style="color:white; text-align:center;">Bonus: Meme Grid Layout</p>
+    <div class="container">
+        <div><img src="./images/sniper-monkey.gif" alt="Meme 1" style="width:100%; border-radius:5px;"></div>
+        <div><img src="./images/tulfo-tombits.gif" alt="Meme 2" style="width:100%; border-radius:5px;"></div>
+        <div><img src="./images/mnm-shaking-butt.gif" alt="Meme 3" style="width:100%; border-radius:5px;"></div>
+        <div><img src="./images/jisoo-duck.gif" alt="Meme 4" style="width:100%; border-radius:5px;"></div>
+        <div><img src="./images/jisoo-live.gif" alt="Meme 5" style="width:100%; border-radius:5px;"></div>
+        <div><img src="./images/elmo-burning-welcome-to-chaos.gif" alt="Bonus Meme" style="width:100%; border-radius:5px;"></div>
+    </div>
 
 </body>
 </html>
